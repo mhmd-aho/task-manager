@@ -13,7 +13,7 @@ export default function AddTask(props){
     let task = props.newTask
     return(
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <form className="bg-white p-6 rounded-lg shadow-lg w-96 space-y-4" onSubmit={handleOnsubmit}>
+                    <form className="bg-white  dark:text-black p-6 rounded-lg shadow-lg w-96 space-y-4" onSubmit={handleOnsubmit}>
                         <h2 className="text-xl font-semibold mb-4">Add New Task</h2>
                         <div className="relative">
                             <input required onChange={handleChange} type="text" name="name" id="name" value={task.name}   className="peer border border-gray-300 w-full px-3 pt-5 pb-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"/>
