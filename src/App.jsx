@@ -1,8 +1,8 @@
 import MainPage from "./taskDisplay/mainPage";
 import SideBar from "./sideBar/sideBar";
 import { useState,useEffect } from "react";
-import dark from './img/icons8-dark-mode-50.png';
-import light from './img/icons8-sun-60.png';
+import dark from '/task-manage/img/icons8-dark-mode-50.png';
+import light from '/task-manage/img/icons8-sun-60.png';
 function App() {
   const [darkMode,setDarkMode] = useState("");
   const [priority,setPriority] = useState("");
@@ -34,7 +34,7 @@ function App() {
   }
   return (
     <div className={`${darkMode} dark:text-blue-50 dark:bg-stone-950 h-screen w-screen`}>
-      <header className="w-full h-1/12 px-10 flex  items-center justify-between border-b border-gray-400 " >
+      <header className="w-full h-1/12 sm:px-10 px-2 flex  items-center justify-between border-b border-gray-400 " >
         <h1 className="text-2xl font-bold" >Task Manager</h1>
         <button onClick={handleOnClick}><img className="h-6 w-6 " src={darkMode? dark : light } /></button>
       </header>

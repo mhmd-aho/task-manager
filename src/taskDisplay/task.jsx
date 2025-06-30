@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import check from '../img/check-svgrepo-com.svg';
-import trash from '../img/trash-blank-alt-svgrepo-com.svg';
+import check from '/task-manage/img/check-svgrepo-com.svg';
+import trash from '/task-manage/img/trash-blank-alt-svgrepo-com.svg';
 export default function Task(props){
     const [hover,setHover] = useState(false);
     let className = ""
