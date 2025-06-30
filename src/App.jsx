@@ -1,8 +1,8 @@
 import MainPage from "./taskDisplay/mainPage";
 import SideBar from "./sideBar/sideBar";
 import { useState,useEffect } from "react";
-import dark from '/task-manage/img/icons8-dark-mode-50.png';
-import light from '/task-manage/img/icons8-sun-60.png';
+import dark from '/src/img/icons8-dark-mode-50.png';
+import light from '/src/img/icons8-sun-60.png';
 function App() {
   const [darkMode,setDarkMode] = useState("");
   const [priority,setPriority] = useState("");
